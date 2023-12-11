@@ -314,8 +314,15 @@ footer {
         line-height: 2.5;
     }
 
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-size: 2vh;
+        padding: 0vh 2vw;
+    }
+
     .navbar-button {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         margin-top: 1vh;

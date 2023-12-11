@@ -412,7 +412,7 @@ footer {
     }
     
     .agendaemento-form, label {
-        font-weight: bold;
+        font-weight: 400;
         color: #192d3e;
         font-size: 26px;
     }

@@ -341,7 +341,7 @@ footer {
     nav {
         grid-area: nav;
         background-color: #1c1c1c;
-        padding: 3vh 15vw 3vh 15vw;
+        padding: 3vh 10vw 3vh 10vw;
     }
 
     #home {
@@ -415,7 +415,7 @@ footer {
         justify-content: center;
         align-items: center;
         line-height: 2.5;
-	font-size: 25px;
+	font-size: 20px;
     }
 
     .navbar-button {

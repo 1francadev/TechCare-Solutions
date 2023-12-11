@@ -418,6 +418,13 @@ footer {
 	font-size: 20px;
     }
 
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-size: 2vh;
+        padding: 0vh 2vw;
+    }
+
     .navbar-button {
         display: flex;
         justify-content: center;

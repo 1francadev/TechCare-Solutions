@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-residencial.css">
+    <title>TechCare Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="navbar" class="navbar">
+            <div class="navbar-container">
+                <a href="/index.html" class="navbar-logo">TechCare Solutions</a>
+                <div class="navbar-menu">
+                    <a href="/index.html" class="navbar-item">Início</a>
+                    <a href="#plano" class="navbar-item">Planos</a>
+                    <a href="/index.html#servico" class="navbar-item">Serviços</a>
+                    <a href="https://wa.me/+5537984170855/" class="navbar-item">Contato</a>
+                </div>
+                <div class="navbar-button">
+                    <a href="#agendamento" class="navbar-buttonstyle" id="shadow-drop-center">Agende um Horário!</a>
+                </div>
+            </div>
+        </div>
+        <div id="home" class="home-page">
+            <h1 class="home-bemvindo">Plano <span style="color: #00BD8B;">Residencial</span></h1>
+            <h2 class="home-slogam">Na TechCare Solutions, entendemos a importância das tecnologias em ambientes residenciais.</h2>
+            <h3 class="home-info">A <span style="color: #ffffff;">TechCare Solutions</span> tem o prazer de apresentar nosso <a href="#agendamento" class="text-plano">Plano Residencial</a>, cuidadosamente elaborado para atender às necessidades tecnológicas da sua casa. Com uma equipe experiente e especializada em serviços de informática, estamos prontos para proporcionar tranquilidade e eficiência para você e sua família.</h3>
+            <div class="home-button">
+                <a href="#plano" id="shadow-drop-center" class="home-buttonstyle">Clique aqui e Saiba Mais!</a>
+            </div>
+        </div>
+        <div id="plano" class="plano-page">
+            <h1 class="plano-title">Quais os Serviços Exclusivos<br>do <span style="font-size: 50px; color: #00BD8B;" class="text-shadow-pop-br">Plano Empresarial?</span></h1>
+            <div class="plano-services">
+                <div class="row">
+                    <div class="col">
+                        <div class="plano-1">
+                            <h3>Suporte Técnico Domiciliar</h3>
+                            <p>Resolução rápida de problemas técnicos no conforto da sua casa. Manutenção preventiva para garantir o funcionamento ideal dos seus dispositivos.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plano-2">
+                            <h3>Segurança Digital Residencial</h3>
+                            <p>Implementação de medidas de segurança para proteger seus dados e dispositivos. Assessoria para práticas seguras online para toda a família.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="plano-3">
+                            <h3>Instalação e Otimização de Redes Wi-Fi</h3>
+                            <p>Configuração de redes sem fio para cobertura total em sua residência. <br>Otimização de roteadores para uma conexão estável.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="plano-4">
+                            <h3>Configuração de Dispositivos</h3>
+                            <p>Ajuda na configuração de computadores, tablets, smartphones e outros dispositivos. Sincronização de dispositivos para uma experiência tecnológica integrada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agendamento" id="agendamento">
+            <div class="agendamento-box">
+                <h2 class="agendamento-title">Agende um Horário Conosco!</h2>
+                <form class="agendamento-form">
+                    <img class="agendamento-img" src="imgs/agenda-img.png" alt="Agende um Horário!">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                
+                    <label for="time">Horario:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="servico">Serviço:</label>
+                    <select name="servico" required>
+                        <option value="sup-tecnico">Suporte Técnico Domiciliar</option>
+                        <option value="instalação">Instalação e Otimização de Redes Wi-Fi</option>
+                        <option value="segurançadigital">Segurança Digital Residencial</option>
+                        <option value="config-dispositivos">Configuração de Dispositivos</option>
+                    </select>
+                    
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-direitos">&copy;2024 - <span style="color: #00BD8B;">TechCare Solutions.</span> Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

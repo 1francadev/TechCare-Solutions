@@ -1,0 +1,648 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-areas: "navbar navbar" "home home" "sobre sobre" "servico servico" "emp-res emp-res" "agendamento agendamento" "footer footer";
+    grid-template-rows: auto;
+}
+
+#navbar {
+    grid-area: navbar;
+}
+
+#home {
+    grid-area: home;
+}
+
+#sobre {
+    grid-area: sobre;
+}
+
+#servico {
+    grid-area: servico;
+}
+
+#emp-res {
+    grid-area: emp-res;
+}
+
+#agendamento {
+    grid-area: agendamento;
+}
+
+.navbar {
+    padding: 5vh 5vw 5vh 5vw;
+    background-color: #1c1c1c;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: aqua;
+    text-decoration: none;
+    font-size: 3.5vh;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-item {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    padding: 0vh 2vw;
+}
+
+.navbar-item:hover {
+    color: aqua;
+}
+
+.navbar-buttonstyle {
+    grid-area: nav;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.411);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar-buttonstyle:hover {
+    background-color: rgba(0, 255, 255, 0.621);
+}
+
+.home-page {
+    width: auto;
+    height: auto;
+    background-image: url("https://cdn.discordapp.com/attachments/399876349369647124/1182129541867638884/Sem_Titulo-2.jpg?ex=658392ed&is=65711ded&hm=a756280912a19ef9b761b0fa39c3b9b6775a8e03e823728fd36d0773160ba3ec&");
+    background-size: cover;
+    background-position: center;
+    padding: 19vh 5vw 19vh 5vw;
+}
+
+.home-bemvindo {
+    color: white;
+    line-height: 1;
+    text-align: left;
+    font-size: 65px;
+}
+
+.home-slogam {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 3;
+}
+
+.home-info {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 5vh;
+}
+
+.home-buttonstyle {
+    display: flex;
+    padding: 10px 50px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.411);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home-buttonstyle:hover {
+    background-color: rgba(0, 255, 255, 0.621);
+}
+
+.sobre-page {
+    width: auto;
+    height: auto;
+    padding: 19vh 5vw 19vh 5vw;
+}
+
+.sobre-quemsomos {
+    font-size: 55px;
+    font-weight: 800;
+    color: #192d3e;
+}
+
+.sobre-info {
+    max-width: 50vw;
+    display: block;
+    font-size: 20px;
+    overflow-wrap: break-word;
+    font-weight: 500;
+    margin-top: 5vh;
+    float: left;
+}
+
+.sobre-img {
+    max-width: 30vw;
+    width: auto;
+    height: auto;
+    margin-top: 5vh;
+    float: inline-end;
+}
+
+.servico-page {
+    background-color: #192d3e;
+    padding: 19vh 5vw 19vh 5vw;
+}
+
+.servico-title {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.servico-info {
+    color: white;
+    max-width: 50vw;
+    overflow-wrap: break-word;
+    text-align: left;
+    margin-top: 5vh;
+    font-weight: 400;
+    font-size: 20px;
+    float: left;
+}
+
+.servico-img {
+    max-width: 25vw;
+    width: auto;
+    height: auto;
+    margin-top: 5vh;
+    float: inline-end;
+}
+
+.empresas-residencial {
+    display: flex;
+    text-align: center;
+    background-color: #192d3e;
+    padding: 5vh 5vw 19vh 5vw;
+}
+
+.residencial, .empresas {
+    flex: 1;
+}
+
+.icon-empresa {
+    width: 100px;
+}
+
+.service-empresas {
+    color: white;
+    padding: 10px;
+}
+
+.service-saibamais {
+    color: white;
+}
+
+.icon-residencia {
+    width: 100px;
+}
+
+.service-residencia {
+    color: white;
+    padding: 10px;
+}
+
+.service-saibamais2 {
+    color: white;
+}
+
+.botao-empresas {
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.411);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.botao-residencial {
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgba(0, 255, 255, 0.411);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agendamento {
+    background-color: #192d3e;
+    padding: 10vh 5vw 19vh 5vw;
+}
+
+.agendamento-box {
+    max-width: 100vw;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.agendaemento-form {
+    display: grid;
+    gap: 20px;
+}
+
+.agendaemento-form, label {
+    font-weight: bold;
+    color: #192d3e;
+}
+
+.agendaemento-form, input, select {
+    width: 50%;
+    color: #192d3e;
+    display: block;
+    padding: 1vh;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.agendaemento-form, button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5vh 0vw 0vh 0vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.agendamento-img {
+    float: right;
+    max-width: 35vw;
+    display: block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1c1c1c;
+    padding: 5vh 0vh 5vh 0vh;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer-logo {
+    color: aqua;
+}
+
+@media screen and ( max-width: 768px ) {
+    #main {
+        grid-template-areas: "navbar" "home" "sobre" "servico" "emp-res" "agendamento" "footer";
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #1c1c1c;
+        padding: 3vh 10vw 3vh 10vw;
+    }
+
+    #home {
+        grid-area: home;
+    }
+
+    #sobre {
+        grid-area: sobre;
+    }
+
+    #servico {
+        grid-area: servico;
+    }
+
+    #emp-res {
+        grid-area: emp-res;
+    }
+
+    #agendamento {
+        grid-area: agendamento;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .home-page {
+        width: auto;
+        height: auto;
+        background-color: #1A2D3E;
+        background-size: cover;
+        background-position: center;
+        padding: 19vh 5vw 19vh 5vw;
+    }
+
+    .home-bemvindo {
+        color: white;
+        line-height: 1;
+        text-align: left;
+        font-size: 40px;
+    }
+    
+    .home-slogam {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: left;
+        line-height: 3;
+    }
+    
+    .home-info {
+        color: white;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .navbar-container {
+        display: block;
+    }
+
+    .navbar-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	font-size: 35px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.5;
+	font-size: 20px;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-size: 2vh;
+        padding: 0vh 2vw;
+    }
+
+    .navbar-button {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1vh;
+    }
+
+    .navbar-buttonstyle {
+        display: inline-block;
+        padding: 1.5vh 3vw 1.5vh 3vw;
+        font-size: 20px;
+    }
+
+    .home-page {
+        width: auto;
+        height: auto;
+        background-color: #1A2D3E;
+        background-size: cover;
+        background-position: center;
+        padding: 10vh 10vw 10vh 10vw;
+    }
+    
+    .home-bemvindo {
+        color: white;
+        line-height: 1;
+        text-align: left;
+        font-size: 35px;
+    }
+    
+    .home-slogam {
+        color: white;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: left;
+        margin-top: 2vh;
+        line-height: 1;
+    }
+    
+    .home-info {
+        color: white;
+        text-align: left;
+        font-size: 20px;
+        margin-top: 2vh;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    .home-button {
+        display: inline-block;
+        width: auto;
+    }
+
+    .home-buttonstyle {
+        display: flex;
+        padding: 10px 50px;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: rgba(0, 255, 255, 0.411);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .sobre-page {
+        width: auto;
+        height: auto;
+        padding: 10vh 10vw 10vh 10vw;
+    }
+    
+    .sobre-quemsomos {
+        font-size: 35px;
+        font-weight: 800;
+        color: #192d3e;
+    }
+    
+    .sobre-info {
+        max-width: 700px;
+        font-size: 20px;
+        overflow-wrap: break-word;
+        font-weight: 500;
+        margin-top: 5vh;
+    }
+    
+    .sobre-img {
+        display: none;
+    }
+
+    .servico-page {
+        width: auto;
+        height: auto;
+        padding: 10vh 10vw 10vh 10vw;
+    }
+    
+    .servico-title {
+        font-size: 30px;
+        font-weight: 800;
+        color: #ffffff;
+    }
+    
+    .servico-info {
+        max-width: 700px;
+        font-size: 20px;
+        overflow-wrap: break-word;
+        font-weight: 500;
+        margin-top: 5vh;
+    }
+    
+    .servico-img {
+        display: none;
+    }
+
+    .agendamento {
+        background-color: #192d3e;
+        padding: 10vh 5vw 19vh 5vw;
+    }
+    .agendamento-title {
+        font-size: 35px;
+        margin-bottom: 4vh;
+        font-weight: 800;
+        color: #192d3e;
+    }
+
+    .agendamento-box {
+        max-width: 100vw;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .agendaemento-form {
+        display: grid;
+        gap: 20px;
+    }
+    
+    .agendaemento-form, label {
+        font-weight: bold;
+        color: #192d3e;
+        font-size: 26px;
+    }
+    
+    .agendaemento-form, input, select {
+        width: 100%;
+        color: #192d3e;
+        display: block;
+        padding: 1vh;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 26px;
+        border-radius: 4px;
+    }
+
+    .agendaemento-form, button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 5vh 0vw 0vh 0vw;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .agendamento-img {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#shadow-drop-center {
+	-webkit-animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 aqua;
+              box-shadow: 0 0 0 0 aqua;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 10px 0px rgba(0, 255, 255, 0.719);
+              box-shadow: 0 0 10px 0px rgba(0, 255, 255, 0.719);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 aqua;
+              box-shadow: 0 0 0 0 aqua;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 10px 0px rgba(0, 255, 255, 0.719);
+              box-shadow: 0 0 10px 0px rgba(0, 255, 255, 0.719);
+    }
+  }
